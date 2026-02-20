@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth import aauthenticate
+from django.contrib import auth
 
 
 def login_view(request):
