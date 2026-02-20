@@ -3,6 +3,32 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(blue,white,cyan,white,blue);
+body{  
+    border: 5px solid springgreen;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+#idformulario{
+    border: 2px solid rebeccapurple;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;         
+    margin-left: 30%;
+    width: 40%;
+    padding: 90px;
+
+    .form-check-input{
+        margin-left: 0%;
+        padding: 0%;
+    }
+}
+h1{
+    text-align: center;    
+}
+.formulario{
+    display: flex;
+    align-items: center;    
+    #form-text{
+        font-size: 20px;        
+    }
+    border: 2px solid red;            
 }
