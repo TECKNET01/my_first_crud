@@ -12,20 +12,9 @@
 <body>
     <h1>Login</h1>
     <div class="formulario">
-        <form action="{% url 'home' %}" method="POST" id="idformulario">
+        <form action="{% url 'home' %}">
             {% csrf_token %}
-            <div class="input-group">                         
-                <input type="text" aria-label="First name" class="form-control" placeholder="Nome:">
-            </div>
-            <div class="form-group">                
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">            
-            </div>
-            <div class="form-group">                
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha:">
-            </div>
-            <div class="botao">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>                    
+            {{ form }}
         </form>
     </div>
     <script src="{% static 'js/index.js' %}"></script>
